@@ -90,7 +90,7 @@ h1 {
 
 .title {
   font-family: 'Martian Mono', monospace;
-  color:darkcyan;
+  color: darkcyan;
 }
 
 .content {
@@ -115,9 +115,10 @@ h1 {
   box-shadow: -1px 0 10px #000;
 }
 
-.learn-more{
+.learn-more {
   min-height: 50px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: flex-end;
+  color: grey;
 }
