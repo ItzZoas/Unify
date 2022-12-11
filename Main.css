@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(pexels-ashutosh-sonwani-1762578.jpg);
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Jost', sans-serif;
+  color: #eee;
+  font-size: 70px;
+  cursor: pointer;
+  cursor: context-menu;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #eee;
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #15B7B9;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.containers-text {
+  width: 90%;
+  margin: auto;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.text-container-left{
+  background-color: whitesmoke;
+  width:300px;
+  margin-left: 60px;
+  height: 400px;
+  box-shadow: -1px 0 10px #000;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.content{
+  justify-content: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color:black;
+  font-size:20px;
+}
+
+.neon{
+  font-size:2em;
+  color:black;
+  text-shadow:0 0 20px #15B7B9; 
+}
+
+.subtitle{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+.container-right.logo {}
