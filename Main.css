@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
 
 * {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
-.page {
+.page{
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(pexels-ashutosh-sonwani-1762578.jpg);
   min-height: 700px;
   background-attachment: fixed;
@@ -70,38 +73,41 @@ h1 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 .text-container-left{
   background-color: whitesmoke;
   width:300px;
-  margin-left: 60px;
+  margin-left: 40px;
   height: 400px;
   box-shadow: -1px 0 10px #000;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
+  border-radius: 20px;
+}
+
+.title{
+  font-family: 'Martian Mono', monospace;
+  color:#15B7B9;
 }
 
 .content{
   justify-content: center;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
-  color:black;
+  color:#15B7B9;
+  font-family: 'Mukta', sans-serif;
   font-size:20px;
 }
 
-.neon{
-  font-size:2em;
-  color:black;
-  text-shadow:0 0 20px #15B7B9; 
-}
 
 .subtitle{
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  color:dimgray;
+  font-family: 'Mukta', sans-serif;
+  font-size: 10px;
 }
 
 
