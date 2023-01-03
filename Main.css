@@ -47,6 +47,7 @@ h1 {
   color: #eee;
   font-family: 'Jost', sans-serif;
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 .navbar ul li::after {
@@ -78,7 +79,7 @@ h1 {
 .text-container-left {
   background-color: whitesmoke;
   width: 400px;
-  margin-left: 200px;
+  margin-left: 100px;
   height: 400px;
   box-shadow: -1px 0 10px #000;
   text-align: center;
@@ -111,14 +112,16 @@ h1 {
 
 
 .container-right-logo {
-  margin-right: 200px;
+  margin-right: 60px;
   box-shadow: -1px 0 10px #000;
 }
 
-.learn-more {
+a{
   min-height: 50px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   color: grey;
+  font-family: 'Jost', sans-serif;
+  text-decoration: none;
 }
