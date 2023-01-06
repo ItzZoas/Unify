@@ -1,0 +1,14 @@
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.content{
+  font-size: 10px;
+  display: flex;
+}
+img{
+  height: 300px;
+  width: auto;
+}
