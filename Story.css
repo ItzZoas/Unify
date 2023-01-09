@@ -1,14 +1,70 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 *{
   margin:0;
   padding:0;
 }
 
+html{
+  background: #191919;
+}
+
 .content{
   font-size: 10px;
   display: flex;
+  padding:170px;
 }
+
 img{
-  height: 300px;
+  height: 450px;
   width: auto;
+  box-shadow:20px 20px 10px black;
+}
+
+.text{
+  margin-left:50px;
+}
+
+h2{
+  color:#fff;
+  line-height: 1.4;
+  font-size:13px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  color:#fff;
+  line-height: 1.0;
+  font-size: 90px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h3{
+  font-size:30px;
+  font-family: 'Josefin Sans', sans-serif;
+  color:#fff;
+  padding-bottom: 12px;
+}
+
+span{
+  color:#68BBE3;
+}
+
+.link{
+  font-size: 15px;
+  display: inline-block;
+  background:#fff;
+  margin-top: 20px; 
+  color:#111;
+  text-decoration: none;
+  padding:15px 30px;
+  border-radius: 40px;
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+a.link:hover{
+  background: #68BBE3;
 }
