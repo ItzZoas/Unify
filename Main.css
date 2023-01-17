@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
@@ -65,54 +64,54 @@ h1 {
 
 h2 {
   font-family: 'Prompt', sans-serif;
-  color:white;
+  color: white;
   font-size: 50px;
 }
 
-h3{
+h3 {
   font-family: 'Prompt', sans-serif;
-  color:#68BBE3;
+  color: #68BBE3;
   font-size: 30px;
   text-transform: uppercase;
 }
 
-.containers{
+.containers {
   position: absolute;
-  right:0;
+  right: 0;
   width: 100%;
   min-height: 100vh;
   padding: 200px;
   margin-top: 50px;
-  display:flex;
+  display: flex;
 }
 
-.containers video{
+.containers video {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height:500px;
+  height: 500px;
   object-fit: cover;
   opacity: 0.4;
 }
 
-.text{
-z-index: 10;
+.text {
+  z-index: 10;
 }
 
-.link{
+.link {
   display: inline-block;
-  background:#fff;
-  margin-top: 20px; 
-  color:#111;
+  background: #fff;
+  margin-top: 20px;
+  color: #111;
   text-decoration: none;
-  padding:10px 30px;
+  padding: 10px 30px;
   border-radius: 20px;
   font-family: 'Questrial', sans-serif;
   text-transform: uppercase;
   transition: all 0.5s;
 }
 
-a.link:hover{
+a.link:hover {
   background: #68BBE3;
 }
