@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create account</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylelogin.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <title>Create account</title>
+  </head>
+
+  <script>
+    function check() {
+    var input = document.getElementById('password_confirm');
+    if (input.value != document.getElementById('password').value) {
+        input.setCustomValidity('Password Must be Matching.');
+    } else {
+        // input is valid -- reset the error message
+        input.setCustomValidity('');
+    }
+}
+  </script>
+
+  <body>
+
+    <div class="box">
+      <div class="container">
+        <div class="top">
+          <span>Don´t have an account?</span>
+          <header>Create account</header>
+        </div>
+        <div class="input-field">
+          <input type="text" class="input" placeholder="Username" id="username" />
+          <i class="bx bx-user"></i>
+        </div>
+
+        <div class="input-field">
+          <input type="text" class="input" placeholder="e-mail" id="email" />
+          <i class='bx bx-envelope'></i>
+        </div>
+
+        <div class="input-field">
+          <input type="Password" class="input" placeholder="Password" id="password" />
+          <i class="bx bx-lock-alt"></i>
+        </div>
+
+        <div class="input-field">
+          <input type="Password" class="input" placeholder="Repeat Password" id="password_confirm" />
+          <i class="bx bx-lock-alt"></i>
+        </div>
+
+        <div class="input-field">
+          <input type="submit" class="submit" value="Login" id="submit" />
+        </div>
+
+        <div class="two-col">
+          <div class="one">
+            <input type="checkbox" name="" id="check" />
+            <label for="check">Remember Me</label>
+          </div>
+          <div class="two">
+            <label><a href="#">Create account</a></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
