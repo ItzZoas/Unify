@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+  font-family: 'poppins', sans-serif;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  background: #131313;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+  height:auto;  
+}
+
+.containers {
+  text-align: center;
+}
+
+a {
+  padding: 10px 20px;
+  font-size: 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: crimson;
+  border: 1px solid rgb(255, 66, 104);
+  border-left: 10px solid rgb(255, 66, 104);
+  transition: all 0.25s ease-in-out;
+}
+
+a:hover {
+  background-color: white;
+  color: rgb(255, 66, 104);
+}
+
+p{
+  color:#ddd;
+  padding-bottom: 20px;
+}
+
+h1{
+  color:#68BBE3;
+  text-transform: uppercase;
+}
