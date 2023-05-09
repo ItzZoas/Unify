@@ -14,10 +14,11 @@ html{
   font-size: 10px;
   display: flex;
   padding:170px;
+  line-height: 1.6;
 }
 
 img{
-  height: 450px;
+  height: 35rem;
   width: auto;
   box-shadow:20px 20px 10px black;
 }
@@ -29,7 +30,7 @@ img{
 h2{
   color:#fff;
   line-height: 1.4;
-  font-size:13px;
+  font-size:16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }

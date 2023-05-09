@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+  font-family: 'poppins', sans-serif;
+}
+
+html {
+  display: inline-block;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("freeimage.jpg");
+  background-size: cover;
+}
+
+.containers {
+  text-align: center;
+  padding-top: 30vh;
+
+}
+
+a {
+  padding: 10px 20px;
+  font-size: 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #68BBE3;
+  border: 1px solid #2E8BC0;
+  border-left: 10px solid #2E8BC0;
+  transition: all 0.25s ease-in-out;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+p {
+  color: #ddd;
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: #68BBE3;
+  text-transform: uppercase;
+}
+
+span {
+  font-size: 34px;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ffd700, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+
+  100% {
+    background-position: 500%;
+  }
+}
