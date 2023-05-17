@@ -1,72 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-*{
-  margin:0;
-  padding:0;
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-html{
+html {
   background: #191919;
 }
 
-.content{
+.content {
   font-size: 10px;
   display: flex;
-  padding:170px;
+  padding: 170px;
   line-height: 1.6;
 }
 
-img{
+#image {
   height: 35rem;
   width: auto;
-  box-shadow:20px 20px 10px black;
+  box-shadow: 20px 20px 10px black;
 }
 
-.text{
-  margin-left:50px;
+.text {
+  margin-left: 50px;
 }
 
-h2{
-  color:#fff;
+h2 {
+  color: #fff;
   line-height: 1.4;
-  font-size:16px;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
 
-h1{
-  color:#fff;
+h1 {
+  color: #fff;
   line-height: 1.0;
   font-size: 90px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-h3{
-  font-size:30px;
+h3 {
+  font-size: 30px;
   font-family: 'Josefin Sans', sans-serif;
-  color:#fff;
+  color: #fff;
   padding-bottom: 12px;
 }
 
-span{
-  color:#68BBE3;
+span {
+  color: #68BBE3;
 }
 
-.link{
+.link {
   font-size: 15px;
   display: inline-block;
-  background:#fff;
-  margin-top: 20px; 
-  color:#111;
+  background: #fff;
+  margin-top: 20px;
+  color: #111;
   text-decoration: none;
-  padding:15px 30px;
+  padding: 15px 30px;
   border-radius: 40px;
   font-family: 'Questrial', sans-serif;
   text-transform: uppercase;
   transition: all 0.5s;
 }
 
-a.link:hover{
+a.link:hover {
   background: #68BBE3;
 }

@@ -1,3 +1,34 @@
+<?php
+
+session_start();
+
+include('conexao.php');
+
+if(isset($_POST["submit"])){
+  $nome = $_POST["username"];
+  $email = $_POST["email"];
+  $senha = $_POST["senha"];
+  $confirm = $_POST["senha_confirm"];
+  $duplicate = mysqli_query($conn, "SELECT * FROM signup WHERE username = '$nome' OR email = '$email'");
+  if(mysqli_num_rows($duplicate) > 0){
+    echo
+    "<script> alert('Username or Email Has Already Taken'); </script>";
+  }
+  else{
+    if($senha == $senha_confirm){
+      $query = "INSERT INTO signup VALUES('$name','$senha','','$email')";
+      mysqli_query($conn, $query);
+      echo
+      "<script> alert('Registration Successful'); </script>";
+    }
+    else{
+      echo
+      "<script> alert('Password Does Not Match'); </script>";
+    }
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,13 +51,14 @@
           <span>Don´t have an account?</span>
           <header>Create account</header>
         </div>
-        <form method="POST" action="insert.php">
+        <form method="post" action="">
           <div class="input-field">
             <input
               type="text"
               class="input"
               placeholder="Username"
               name="username"
+              id="username"
             />
             <i class="bx bx-user"></i>
           </div>
@@ -37,6 +69,7 @@
               class="input"
               placeholder="e-mail"
               name="email"
+              id="email"
             />
             <i class="bx bx-envelope"></i>
           </div>
@@ -46,7 +79,8 @@
               type="Password"
               class="input"
               placeholder="Password"
-              name="password"
+              name="senha"
+              id="senha"
             />
             <i class="bx bx-lock-alt"></i>
           </div>
@@ -56,10 +90,11 @@
               type="Password"
               class="input"
               placeholder="Repeat Password"
-              name="password_confirm"
+              name="senha_confirm"
+              id="senha_confirm"
             />
             <i class="bx bx-lock-alt"></i>
-          </div>
+          </div> 
 
           <div class="input-field">
             <input
@@ -67,16 +102,12 @@
               class="submit"
               value="Create Account"
               id="submit"
+              name="submit"
             />
           </div>
         </form>
-        <div class="two-col">
-          <div class="one">
-            <input type="checkbox" name="" id="check" />
-            <label for="check">Remember Me</label>
-          </div>
           <div class="two">
-            <label><a href="#">Create account</a></label>
+            <label><a href="">Login</a></label>
           </div>
         </div>
       </div>
