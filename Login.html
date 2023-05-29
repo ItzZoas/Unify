@@ -20,40 +20,49 @@
           <span>Have an account?</span>
           <header>Login</header>
         </div>
-
-        <div class="input-field">
-          <input
-            type="text"
-            class="input"
-            placeholder="Username"
-            id="username"
-          />
-          <i class="bx bx-user"></i>
-        </div>
-
-        <div class="input-field">
-          <input
-            type="Password"
-            class="input"
-            placeholder="Password"
-            id="password"
-          />
-          <i class="bx bx-lock-alt"></i>
-        </div>
-
-        <div class="input-field">
-          <input type="submit" class="submit" value="Login" id="submit" />
-        </div>
-
-        <div class="two-col">
-          <div class="one">
-            <input type="checkbox" name="" id="check" />
-            <label for="check">Remember Me</label>
+        <form method="post" action="login.php">
+          <div class="input-field">
+            <input
+              type="text"
+              class="input"
+              placeholder="Username"
+              id="username"
+              name="username"
+            />
+            <i class="bx bx-user"></i>
           </div>
-          <div class="two">
-            <label><a href="createaccount.html">Create account</a></label>
+
+          <div class="input-field">
+            <input
+              type="Password"
+              class="input"
+              placeholder="Password"
+              id="password"
+              name="password"
+            />
+            <i class="bx bx-lock-alt"></i>
           </div>
-        </div>
+
+          <div class="input-field">
+            <input
+              type="submit"
+              class="submit"
+              value="Login"
+              id="submit"
+              name="submit"
+            />
+          </div>
+
+          <div class="two-col">
+            <div class="one">
+              <input type="checkbox" name="" id="check" />
+              <label for="check">Remember Me</label>
+            </div>
+            <div class="two">
+              <label><a href="createaccount.php">Create account</a></label>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </body>
